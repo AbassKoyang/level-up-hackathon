@@ -1,5 +1,4 @@
-body{
-    width: 100vw;
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -7,7 +6,7 @@ body{
 
 header{
     width: 100%;
-    padding: 12px 16px;
+    padding: 16px 18px;
     background-color: #1A1A1A;
     display: flex;
     justify-content: space-between;
@@ -19,17 +18,17 @@ header .logo-wrapper{
     justify-content: center;
 }
 
-.logo-wrapper .movile-logo{
+.logo-wrapper .mobile-logo{
     display: none;
 }
 
 .navbar{
     background-color: #303030;
-    border: 1px solid #616161;
+    border: 2px solid #616161;
     border-radius: 8px;
     padding: 4px 8px;
     width: 480px;
-    height: 32px;
+    height: 35px;
 }
 
 .navbar .navbar-input{
@@ -37,8 +36,11 @@ header .logo-wrapper{
     height: 100%;
     background-color: transparent;
     color: #B5B5B5;
-    font-size: 13px;
+    font-size: 16px;
     font-family: 'Inter';
+    stroke: none;
+    border: none;
+    outline: none;
 }
 
 .buttons-wrapper{
@@ -46,4 +48,30 @@ header .logo-wrapper{
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.buttons-wrapper .notification-button{
+    background-color: #303030;
+    padding: 8px;
+    border-radius: 8px;
+    stroke: none;
+    border: none;
+    outline: none;
+}
+.buttons-wrapper .username-button{
+    background-color: #303030;
+    padding: 8px;
+    border-radius: 8px;
+    stroke: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Inter';
+    font-size: 16px;
+} 
+.buttons-wrapper .username-button span{
+    background-color: #36FBA1;
+    padding: 8px;
+    border-radius: 8px;
+    color: #00000066;
 }
