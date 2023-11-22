@@ -10,6 +10,7 @@ header{
     background-color: #1A1A1A;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header .logo-wrapper{
@@ -29,10 +30,22 @@ header .logo-wrapper{
     padding: 4px 8px;
     width: 480px;
     height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar:hover{
+    border: 2px solid #E1E1E1;
+}
+.navbar:focus{
+    border: 2px solid white;
+}
+.navbar:focus-within{
+    border: 2px solid white;
 }
 
 .navbar .navbar-input{
-    width: 100%;
+    width: 95%;
     height: 100%;
     background-color: transparent;
     color: #B5B5B5;
@@ -47,7 +60,7 @@ header .logo-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
 .buttons-wrapper .notification-button{
@@ -60,18 +73,56 @@ header .logo-wrapper{
 }
 .buttons-wrapper .username-button{
     background-color: #303030;
-    padding: 8px;
+    padding: 6px 6px 6px 10px;
     border-radius: 8px;
     stroke: none;
     border: none;
     outline: none;
     color: white;
     font-family: 'Inter';
-    font-size: 16px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
 } 
 .buttons-wrapper .username-button span{
     background-color: #36FBA1;
-    padding: 8px;
-    border-radius: 8px;
+    padding: 6px;
+    border-radius: 6px;
     color: #00000066;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    .logo-wrapper .desktop-logo{
+        display: none;
+    }
+    .logo-wrapper .mobile-logo{
+        display: block;
+        margin-right: 20px;
+    }
+    .navbar{
+     width: 280px;
+     }
+    .navbar  .navbar-input{
+        width: 90%;
+     }
+     .buttons-wrapper{
+        gap: 0.4rem;
+     }
+     .buttons-wrapper .notification-button {
+        background-color: transparent;
+        margin-left: 0.4rem;
+     }
+     .buttons-wrapper .username-button {
+        padding: 0;
+     }
+     .buttons-wrapper .username-button p{
+        display: none;
+     }
+     .buttons-wrapper .username-button span{
+        padding: 8px;
+        margin: 0;
+        font-size: 16px;
+     }
 }
