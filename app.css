@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color:#E3E3E3;
+}
 
 header{
     width: 100%;
@@ -40,7 +43,7 @@ header .logo-wrapper{
 .navbar:focus{
     border: 2px solid white;
 }
-.navbar:focus-within{
+.navbar:active{
     border: 2px solid white;
 }
 
@@ -56,6 +59,13 @@ header .logo-wrapper{
     outline: none;
 }
 
+.navbar-input:focus .navbar{
+    border: 2px solid white;
+}
+.navbar-input:active .navbar{
+    border: 2px solid white;
+}
+
 .buttons-wrapper{
     display: flex;
     justify-content: center;
@@ -65,25 +75,48 @@ header .logo-wrapper{
 
 .buttons-wrapper .notification-button{
     background-color: #303030;
-    padding: 8px;
+    padding: 6px;
     border-radius: 8px;
     stroke: none;
-    border: none;
+    border: 2px solid transparent;
     outline: none;
+    cursor: pointer;
+}
+.buttons-wrapper .notification-button:hover{
+    background-color: #616161;
+}
+.buttons-wrapper .notification-button:active{
+    background-color: #656266;
+}
+.buttons-wrapper .notification-button:focus{
+    background-color: #656266;
+    border: 2px solid #005BD3;
 }
 .buttons-wrapper .username-button{
     background-color: #303030;
-    padding: 6px 6px 6px 10px;
+    padding: 4px 4px 4px 8px;
     border-radius: 8px;
     stroke: none;
-    border: none;
+    border: 2px solid transparent;
     outline: none;
     color: white;
     font-family: 'Inter';
-    font-size: 18px;
+    font-size: 14px;
     display: flex;
     align-items: center;
-} 
+    cursor: pointer;
+}
+
+.buttons-wrapper .username-button:hover{
+    background-color: #616161;
+}
+.buttons-wrapper .username-button:active{
+    background-color: #656266;
+}
+.buttons-wrapper .username-button:focus{
+    background-color: #656266;
+    border: 2px solid #005BD3;
+}
 .buttons-wrapper .username-button span{
     background-color: #36FBA1;
     padding: 6px;
@@ -91,6 +124,155 @@ header .logo-wrapper{
     color: #00000066;
     font-size: 14px;
     margin-left: 8px;
+}
+
+.menu{
+    position: fixed;
+    top: 90px;
+    right: 20;
+    width: 350px;
+    padding: 4px;
+    display: none;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+}
+
+.menu-active{
+    display: flex;
+}
+.menu .menu-item{
+    width: 100%;
+    list-style: none;
+}
+.menu .menu-item .menu-username-button{
+    width: 100%;
+    padding: 4px 8px;
+    background-color: #F1F1F1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    stroke: none;
+}
+.menu .menu-item .menu-username-button div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.menu .menu-item .menu-username-button div span{
+    font-size: 14px;
+    font-weight: 00;
+    background-color: #36FBA1;
+    padding: 8px;
+    border-radius: 8px;
+}
+.menu .menu-item .menu-username-button div p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #303030;
+}
+
+.store-button{
+    width: 100%;
+    padding: 4px 8px;
+    margin: 4px 0;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    background-color: transparent;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    stroke: none;
+}
+.store-button:hover{
+    background-color: #F1F1F1;
+}
+.store-button:active{
+    background-color: #F1F1F1;
+}
+.store-button:focus{
+    background-color: #F1F1F1;
+}
+.store-button p{
+    font-size: small;
+    font-weight: 400;
+    color: #303030;
+}
+
+.cat-two{
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 4px 0;
+}
+.cat-two .cat-two-button{
+    width: 100%;
+    padding: 8px 8px;
+    margin: 4px 0;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    background-color: transparent;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    stroke: none;
+    font-size: small;
+    font-weight: 400;
+    color: #303030;
+}
+.cat-two .cat-two-button:hover{
+    background-color: #F1F1F1;
+}
+.cat-two .cat-two-button:active{
+    background-color: #F1F1F1;
+}
+.cat-two .cat-two-button:focus{
+    background-color: #F1F1F1;
+}
+
+.cat-three{
+    padding: 4px 0;
+}
+.cat-three .cat-three-button{
+    width: 100%;
+    padding: 8px 8px;
+    margin: 4px 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    stroke: none;
+    font-size: small;
+    font-weight: 400;
+    color: #303030;
+}
+.cat-three .cat-three-button:hover{
+    background-color: #F1F1F1;
+}
+.cat-three .cat-three-button:active{
+    background-color: #F1F1F1;
+}
+.cat-three .cat-three-button:focus{
+    background-color: #F1F1F1;
+}
+.cat-three-button p {
+    font-weight: 600;
+    color: #303030;
+}
+.cat-three-button small {
+    color: #616161;
+    margin-top: 2px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -113,6 +295,7 @@ header .logo-wrapper{
      .buttons-wrapper .notification-button {
         background-color: transparent;
         margin-left: 0.4rem;
+        padding: 6px;
      }
      .buttons-wrapper .username-button {
         padding: 0;
