@@ -148,7 +148,7 @@ header .logo-wrapper{
 .menu .menu-item .menu-username-button{
     width: 100%;
     padding: 4px 8px;
-    background-color: #F1F1F1;
+    background-color: transparent;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -157,6 +157,15 @@ header .logo-wrapper{
     outline: none;
     border: none;
     stroke: none;
+}
+.menu .menu-item .menu-username-button:hover{
+    background-color: #F1F1F1;
+}
+.menu .menu-item .menu-username-button:active{
+    background-color: #F1F1F1;
+}
+.menu .menu-item .menu-username-button:focus{
+    background-color: #F1F1F1;
 }
 .menu .menu-item .menu-username-button div{
     display: flex;
@@ -307,5 +316,9 @@ header .logo-wrapper{
         padding: 8px;
         margin: 0;
         font-size: 16px;
+     }
+
+     .menu{
+        width: 280px;
      }
 }
