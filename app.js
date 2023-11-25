@@ -59,4 +59,3 @@ allMenuItems.forEach((menuItem, menuItemIndex) =>{
     menuItem.addEventListener('keyup', (event)=>{handleMenuItemArrowKeyPress(event, menuItemIndex)})
 })
 
-  

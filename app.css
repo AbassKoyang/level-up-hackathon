@@ -5,11 +5,12 @@
 }
 body{
     background-color:#E3E3E3;
+    font-family: 'Inter';
 }
 
 header{
     width: 100%;
-    padding: 16px 18px;
+    padding: 12px 16px;
     background-color: #1A1A1A;
     display: flex;
     justify-content: space-between;
@@ -30,11 +31,11 @@ header .logo-wrapper{
     background-color: #303030;
     border: 2px solid #616161;
     border-radius: 8px;
-    padding: 4px 8px;
     width: 480px;
-    height: 35px;
+    padding: 0 8px;
+    height: 32px;
     display: flex;
-    justify-content: space-between;
+    gap: 6px;
     align-items: center;
 }
 .navbar:hover{
@@ -52,8 +53,10 @@ header .logo-wrapper{
     height: 100%;
     background-color: transparent;
     color: #B5B5B5;
-    font-size: 16px;
-    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
     stroke: none;
     border: none;
     outline: none;
@@ -70,17 +73,22 @@ header .logo-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.8rem;
+    gap: 8px;
 }
 
 .buttons-wrapper .notification-button{
+    position: relative;
     background-color: #303030;
-    padding: 6px;
+    display: flex;
+    width: 32px;
+    height: 32px;
     border-radius: 8px;
-    stroke: none;
-    border: 2px solid transparent;
+    justify-content: center;
+    align-items: center;
     outline: none;
+    border: none;
     cursor: pointer;
+    transition: all 200ms ease-in;
 }
 .buttons-wrapper .notification-button:hover{
     background-color: #616161;
@@ -90,21 +98,25 @@ header .logo-wrapper{
 }
 .buttons-wrapper .notification-button:focus{
     background-color: #656266;
-    border: 2px solid #005BD3;
+    outline: 2px solid #005BD3;
+    outline-offset: 1px;
 }
 .buttons-wrapper .username-button{
     background-color: #303030;
-    padding: 4px 4px 4px 8px;
+    padding: 2px 2px 2px 8px;
     border-radius: 8px;
-    stroke: none;
-    border: 2px solid transparent;
     outline: none;
     color: white;
-    font-family: 'Inter';
-    font-size: 14px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
     display: flex;
     align-items: center;
+    gap: 8px;
     cursor: pointer;
+    border: none;
+    transition: all 200ms ease-in;
 }
 
 .buttons-wrapper .username-button:hover{
@@ -115,27 +127,31 @@ header .logo-wrapper{
 }
 .buttons-wrapper .username-button:focus{
     background-color: #656266;
-    border: 2px solid #005BD3;
+    outline: 2px solid #005BD3;
+    outline-offset: 1px;
 }
 .buttons-wrapper .username-button span{
     background-color: #36FBA1;
     padding: 6px;
     border-radius: 6px;
-    color: #00000066;
-    font-size: 14px;
-    margin-left: 8px;
+    color: rgba(0, 0, 0, 0.40);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
 }
 
 .menu{
     position: fixed;
     top: 90px;
     right: 20;
-    width: 350px;
-    padding: 4px;
+    width: 320px;
+    padding: 8px;
     display: none;
     flex-direction: column;
     background: white;
-    border-radius: 8px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
 }
 
 .menu-active{
@@ -147,7 +163,7 @@ header .logo-wrapper{
 }
 .menu .menu-item .menu-username-button{
     width: 100%;
-    padding: 4px 8px;
+    padding: 4px 12px 4px 8px;
     background-color: transparent;
     border-radius: 8px;
     display: flex;
@@ -173,21 +189,26 @@ header .logo-wrapper{
     gap: 8px;
 }
 .menu .menu-item .menu-username-button div span{
-    font-size: 14px;
-    font-weight: 00;
-    background-color: #36FBA1;
+    text-align: center;
     padding: 8px;
-    border-radius: 8px;
+    font-size: 10.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    background-color: #36FBA1;
+    border-radius: 5.25px;
 }
 .menu .menu-item .menu-username-button div p{
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
     color: #303030;
 }
 
 .store-button{
     width: 100%;
-    padding: 4px 8px;
+    padding: 4px 6px;
     margin: 4px 0;
     border-radius: 8px;
     display: flex;
@@ -209,8 +230,10 @@ header .logo-wrapper{
     background-color: #F1F1F1;
 }
 .store-button p{
-    font-size: small;
-    font-weight: 400;
+    font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
     color: #303030;
 }
 
@@ -221,7 +244,7 @@ header .logo-wrapper{
 }
 .cat-two .cat-two-button{
     width: 100%;
-    padding: 8px 8px;
+    padding: 6px 6px;
     margin: 4px 0;
     border-radius: 8px;
     display: flex;
@@ -232,8 +255,10 @@ header .logo-wrapper{
     outline: none;
     border: none;
     stroke: none;
-    font-size: small;
-    font-weight: 400;
+    font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
     color: #303030;
 }
 .cat-two .cat-two-button:hover{
@@ -251,7 +276,7 @@ header .logo-wrapper{
 }
 .cat-three .cat-three-button{
     width: 100%;
-    padding: 8px 8px;
+    padding: 6px 6px;
     margin: 4px 0;
     border-radius: 8px;
     display: flex;
@@ -261,9 +286,10 @@ header .logo-wrapper{
     cursor: pointer;
     outline: none;
     border: none;
-    stroke: none;
-    font-size: small;
+    font-size: 13px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 140%;
     color: #303030;
 }
 .cat-three .cat-three-button:hover{
@@ -282,6 +308,48 @@ header .logo-wrapper{
 .cat-three-button small {
     color: #616161;
     margin-top: 2px;
+}
+
+.notification-button .notification-con{
+    width: 350px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+.notification-con .notification-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.notification-con .notification-nav p{
+    font-size: medium;
+    font-weight: 600;
+}
+.notification-con .notification-nav .notification-nav-button-con{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+ }
+.notification-con .notification-nav button{
+    border: none;
+    outline: none;
+    stroke: none;
+    background: transparent;
+}
+.notification{
+    width: 100%;
+    padding: 12px;
+    background-color: #F1F1F1;
+    font-size: small;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    stroke: none;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
