@@ -121,18 +121,27 @@ const progress_count = document.querySelector('#progress-count');
 let progress = 0;
 let progressCount = 0;
 const arrow = document.querySelector('#arrowdown-button');
+const arrowDown = document.querySelector('#arrowdown-icon');
+const arrowUp = document.querySelector('#arrowup-icon');
 const Aria_live = document.querySelector('#aria-live');
 
 
 
 
-arrow.addEventListener('click', () => {
+const openOrCloseSetUP = () => {
     const isFirstStepHidden = step[0].classList.contains('active');
-    step.forEach((step) => {
+        step.forEach((step) => {
         step.classList.toggle('active');
-    });
-    arrow.style.transform = isFirstStepHidden ? 'rotate(180deg)' : 'rotate(360deg)';
-});
+        });
+    if (!isFirstStepHidden) {
+        arrowDown.classList.add('hidden');
+        arrowUp.classList.remove('hidden');
+    } else {
+        arrowDown.classList.remove('hidden');
+        arrowUp.classList.add('hidden');
+    }
+}
+arrow.addEventListener('click', openOrCloseSetUP);
 
 CheckBoxes.forEach((checkbox, index) => {
     const handleMarkAsDone = () => {

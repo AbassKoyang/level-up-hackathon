@@ -489,10 +489,15 @@ main{
     font-weight: 600;
     line-height: 140%;
 }
-.set-up-nav .arrowdown-button{
+.set-up-nav .arrowdown-button {
     background-color: transparent;
     cursor: pointer;
     border: none;
+}
+.set-up-nav .arrowdown-button svg{
+    animation-name: spinHalfWay;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
 }
 .setup-guide .description{
     color:#303030;
@@ -565,7 +570,7 @@ main{
     cursor: pointer;
 }
 
-.content-con .check-box:hover svg circle{
+.content-con .check-box:hover #not-completed-icon circle{
     stroke-dasharray: none;
     fill: #D9D9D9;
 }
@@ -583,9 +588,9 @@ main{
     animation-timing-function: linear;
 }
 
-#check-box{
+#completed-icon{
     animation-name: scaleRotate;
-    animation-duration: 400ms;
+    animation-duration: 200ms;
     animation-timing-function: linear;
 }
 
@@ -672,10 +677,18 @@ main{
         transform: rotate(360deg);
     }
 }
+@keyframes spinHalfWay {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 @keyframes scaleRotate {
     from{
         transform: scale(0);
-        transform: rotate(180deg);
+        transform: rotate(270deg);
         opacity: 0;
     }
     to{
@@ -705,6 +718,7 @@ main{
      .buttons-wrapper .notification-button {
         background-color: transparent;
         padding: 6px;
+        margin-left: 8px;
      }
      .buttons-wrapper .username-button{
         padding: 2px 2px 2px 2px;
@@ -736,6 +750,9 @@ main{
      .dashboard-notification{
         border-radius: 0;
      }
+     .dashboard-notification p{
+        margin-right: 16px;
+     }
      .dashboard .dashboard-notification{
         flex-direction: column;
         justify-content: flex-start;
@@ -747,6 +764,7 @@ main{
      .cancel-button{
         position: absolute;
         transform: translateY(-50%);
+        right: 8px;
      }
     .main-dashboard{
         border-radius: 0;
