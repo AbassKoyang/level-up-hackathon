@@ -66,6 +66,7 @@ const notificationTrigger = document.querySelector('.notification-button');
 const notificationCon = document.querySelector('#notification-con');
 const notification = document.querySelector('.notification');
 
+// Notification Toggle
 const showNotification = () => {
     notificationTrigger.setAttribute('aria-expanded', 'true');
     notification.focus();
@@ -104,7 +105,7 @@ const closeDashboardNotification = () => {
 cancelButton.addEventListener('click', closeDashboardNotification)
 
 
-// set up
+// SetUp variables
 document.addEventListener('DOMContentLoaded', () => {
 const step = document.querySelectorAll('.step');
 const CheckBoxes = document.querySelectorAll('#check-box')
@@ -127,7 +128,6 @@ const Aria_live = document.querySelector('#aria-live');
 
 
 
-
 const openOrCloseSetUP = () => {
     const isFirstStepHidden = step[0].classList.contains('active');
         step.forEach((step) => {
@@ -142,6 +142,8 @@ const openOrCloseSetUP = () => {
     }
 }
 arrow.addEventListener('click', openOrCloseSetUP);
+
+// Toggle each steps
 
 CheckBoxes.forEach((checkbox, index) => {
     const handleMarkAsDone = () => {
