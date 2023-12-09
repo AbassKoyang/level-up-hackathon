@@ -9,7 +9,7 @@ The hackathon was an eye-opener for me as didn't use to take accessibility into 
 I learnt a lot about accessibility while working on this project.
 The results for the hackathon is not out yet and i still don't know my faith. Lol😅
 
-Live website: www.level-up-hackathon-abass.vercel.app
+Live website: https://level-up-hackathon-abass.vercel.app
 
 ![Screenshot (79)](https://github.com/AbassKoyang/level-up-hackathon/assets/125982523/4c4d5345-497d-4a48-ba8d-79f25bd3163e)
 
