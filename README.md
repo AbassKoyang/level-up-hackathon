@@ -7,7 +7,7 @@ The hacckathon wasn't like the usal hackathons, it was conducted with the aim of
 The hackathon was an eye-opener for me as didn't use to take accessibility into consideration when building a web app.
 
 I learnt a lot about accessibility while working on this project.
-The results for the hackathon is not out yet and i still don't know my faith. lol😅
+The results for the hackathon is not out yet and i still don't know my faith. Lol😅
 
 Live website: www.level-up-hackathon-abass.vercel.app
 
